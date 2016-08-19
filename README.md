@@ -4,8 +4,12 @@ Check that an URL is up and it returns a response that starts with an String wit
 
 We suggest to run it on Jenkins. Simply create a Job for every URL you want to monitor, and report the failing builds at your Slack. Or, if you have a better idea, don't hesitate to open an issue and share it :·)
 
-## An example
+## How to run it?
 ``gradlew run -Pwith=http://api.citybik.es/v2/networks,{``
+
+or if you prefer to run on Docker
+
+``docker run fewlaps/http-monitor run -Pwith=http://api.citybik.es/v2/networks,{``
 
 ## LICENSE ##
 
